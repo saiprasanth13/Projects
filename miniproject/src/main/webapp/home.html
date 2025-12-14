@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+   <title>Vedaisa 🌿 Organic Store</title>
+</head>
+<body >
+    <div class="mt-3 d-flex" style="margin-left: 85px;">
+    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg">
+    
+     <a href="aboutpage.html" class="text-decoration-none fs-5 mt-4 text-success nav-link" style="margin-left: 135px;"  >About</a>
+     <a href="deparment.html" class="text-decoration-none fs-5 mx-4 mt-4 text-black nav-link" id="as">Everything</a>
+     <a href="serviespage.html" class="text-decoration-none fs-5 mx-4 mt-4 text-black nav-link"id="as">Groceries</a>
+     <a href="doctorpage.html" class="text-decoration-none fs-5 mx-4 mt-4 text-black nav-link"id="as">Products</a>
+     <a href="contact.html" class="text-decoration-none fs-5 mx-4 mt-4 text-black nav-link"id="as">Contact</a>
+     
+   
+    
+    <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+   class="bi bi-person-add mt-3 text-black border-1-success rounded-circle bg-white  fs-1 px-1 d-flex justify-content-center align-items-center text-decoration-none"
+   style="margin-left:300px; width: 45px; height:45px;" id="ba">
+</a>
+    <!-- 🛒 Basket Icon to trigger Offcanvas -->
+<a class="bi bi-cart4 mt-3 text-black border-1-success rounded-circle bg-white fs-1 px-1 ms-5 d-flex justify-content-center align-items-center text-decoration-none"
+   style="width: 45px; height:45px;"
+   data-bs-toggle="offcanvas" 
+   href="#offcanvasCart" 
+   role="button" 
+   aria-controls="offcanvasCart" id="ba">
+</a>
+
+    
+     
+   </div>
+   <div class="container mt-5" style="height:600px;">
+  <div class="row">
+    
+    <!-- Left Side Image -->
+    <div class="col-lg-7"  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+
+  <div class="card border-0">
+    <img 
+      id="product-img"
+      src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/organic-products-hero.png"
+      class="card-img-top"
+      alt="Organic Meal">
+  </div>
+</div>
+
+    
+    <!-- Right Side Content -->
+   
+    <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center text-center" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="300"
+     data-aos-duration="300">
+       <img 
+        src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png"
+        alt="Logo Leaf"
+        style="width:150px; margin-bottom:20px;">
+        
+      <h1 class="text-success fw-bold">Fresh Organic Products</h1>
+      <p class="text-muted fs-3 mt-3">Healthy, Fresh, and 100% Natural </p>
+      <p class="text-muted fs-3 ">  straight from farm to your kitchen</p>
+      <div class="d-flex">
+       <a href="products.html" 
+   class="btn btn-success p-2 mt-4 px-4 py-2 fs-5" 
+   style="margin-left:-220px !important;" 
+   id="s">
+   <i class="bi bi-cart-plus me-2"></i>Shop Now
+</a>
+
+      <a href="Register.html" class="btn btn-warning mt-4 ms-5 px-4 py-2 fs-4" id="sa">Join Us</a>
+      </div>
+  </div>
+  </div>
+</div>
+<div class="bg-success mt-5 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 my-5 rounded-5" >
+  <div class="card shadow bg-black d-flex align-items-center flex-row p-3">
+    <i class="bi bi-truck fs-1 text-success me-3"></i>
+    <p class="h4 text-white mb-0 fw-bold">Free Delivery<br>Above ₹199</p>
+  </div>
+  
+</div>
+ <div class="col-lg-3 my-5 rounded-5" >
+  <div class="card shadow bg-black d-flex align-items-center flex-row p-3">
+    <i class="bi bi-person-video2 fs-1 text-success me-3"></i>
+    <p class="h4 text-white mb-0 fw-bold">Certified Organic<br>
+    
+    </p>
+  </div>
+</div>
+      <div class="col-lg-3 my-5 rounded-5">
+        <div class="card shadow bg-black d-flex align-items-center flex-row p-3">
+    <i class="bi bi-cash fs-1 text-success me-3"></i>
+    <p class="h4 text-white mb-0 fw-bold">Huge Savings<br>
+    </p>
+  </div>
+</div>
+<div class="col-lg-3 my-5">
+   <div class="card shadow bg-black d-flex align-items-center flex-row p-3">
+    <i class="bi bi-recycle fs-1 text-success me-3"></i>
+    <p class="h4 text-white mb-0 fw-bold">Easy Returns<br>
+    </p>
+  </div>
+ </div>
+</div>
+</div>
+</div>
+<div class="container"style="margin-top: 100px;">
+  <h1 class="text-center">Best Selling Products</h1>
+  <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png"style="margin-left:570px;" class="mt-1">
+</div>
+<div class="container mt-5">
+  <div class="row">
+    
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+   <h3 class="text-success-emphasis">Fruits&Vegatables</h3>
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://bettervitamin.com/wp-content/uploads/2013/07/vegetables.jpg"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center" id="as">Vegetables</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://cdn.zeptonow.com/production/cms/category/474e6e58-1894-4378-86f1-168cc7266d1a.png"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center" id="as">Dairy</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/41a0810e-1fc3-46e4-9d2c-7d9e79e0aa29/hp_f&v_m_fresh-fruits_480_250923.jpg?tr=w-480,q-80"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center"id="as">Fruits</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/41a0810e-1fc3-46e4-9d2c-7d9e79e0aa29/hp_f&v_m_cuts-&-exotics_480_250923.jpg?tr=w-480,q-80"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center" id="as">Cut Fruits</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+   
+</div>
+</div>
+<div class="container" style="margin-top: 100px;">
+  <div class="row">
+    
+    <div class="col-2 ">
+      <div class="card shadow border-0 rounded-4 bg-success-subtle " style="width: 160px; height: 160px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_atta-flour-staplesStorefront_m_480_250323_01.jpg?tr=w-480,q-80" style="width: 130px; height: 130px; " class=" rounded-2 mx-3 my-2">
+      <p class= " h5 text-black text-center"id="as" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Atta&Flour</p>
+     </div> 
+  </div>
+  <div class="col-2">
+    <div class="card shadow border-0 rounded-4 bg-success-subtle " style="width: 160px; height: 160px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_rice-staplesStorefront_m_480_250323_02.jpg?tr=w-480,q-80" style="width: 130px; height: 130px; " class=" rounded-2 mx-3 my-2">
+      <p class= " h5 text-black text-center"id="as" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Rice&Products</p>
+     </div>
+  </div>
+   <div class="col-2">
+    <div class="card shadow border-0 rounded-4 bg-success-subtle " style="width: 160px; height: 160px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_dals-pulses-staplesStorefront_m_480_250323_03.jpg?tr=w-480,q-80" style="width: 130px; height: 130px; " class=" rounded-2 mx-3 my-2">
+      <p class= " h5 text-black text-center"id="as" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Dal&Pulas</p>
+     </div>
+  </div>
+    <div class="col-2">
+       <div class="card shadow border-0 rounded-4 bg-success-subtle " style="width: 160px; height: 160px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_cooking-oils-staplesStorefront_m_480_250323_04.jpg?tr=w-480,q-80" style="width: 130px; height: 130px; " class=" rounded-2 mx-3 my-2">
+      <p class= " h5 text-black text-center"id="as" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> Oil&Ghee</p>
+     </div>      
+     </div>
+     <div class="col-2">
+      <div class="card shadow border-0 rounded-4 bg-success-subtle " style="width: 160px; height: 160px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_dry-fruits-staplesStorefront_m_480_250323_05.jpg?tr=w-480,q-80" style="width: 130px; height: 130px; " class=" rounded-2 mx-3 my-2">
+      <p class= " h5 text-black text-center"id="as" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Dry Nuts</p>
+     </div>
+    
+     </div>
+     <div class="col-2">
+      <div class="card shadow border-0 rounded-4 bg-success-subtle " style="width: 160px; height: 160px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_salt-staplesStorefront_m_480_250323_06.jpg?tr=w-480,q-80" style="width: 130px; height: 130px; " class=" rounded-2 mx-3 my-2">
+      <p class= " h5 text-black text-center"id="as" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Salt&Sugar</p>
+     </div>
+  </div>
+</div>
+</div>
+<div class="container mt-5">
+  <div class="row">
+    
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+    <h3 class="text-success-emphasis">Snacks Store</h3>
+
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_biscuits-&-namkeens_480_250923.jpg?tr=w-480,q-80"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center" id="as">Vegetables</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_breakfast-cereals_480_250923.jpg?tr=w-480,q-80"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center" id="as">Dairy</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_pasta-sauces-&-more_480_270723.jpg?tr=w-480,q-80"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center"id="as">Fruits</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_sweet-cravings_480_250923.jpg?tr=w-480,q-80"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center" id="as">Cut Fruits</p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+  <div class="row">
+    
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+    <h3 class="text-primary-emphasis">Cleaning & Household</h3>
+
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_cleaners_480_250723.jpg?tr=w-480,q-80"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center" id="as">Vegetables</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_paper-disposables-&-garbage-bags_480_250723.jpg?tr=w-480,q-80"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center" id="as">Dairy</p>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_freshner_480_250723.jpg?tr=w-480,q-80 "
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center"id="as">Fruits</p>
+      </div>
+    </div>
+     <div class="col-3">
+      <div class="card border-0 rounded-4 bg-success-subtle" style="width: 250px; height: 180px;" id="cards">
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_detergents-&-fabric-care_480_250723.jpg?tr=w-480,q-80"
+             class="rounded-2 mx-3 my-2" style="width: 220px; height: 170px;">
+        <p class="h5 text-black text-center" id="as">Cut Fruits</p>
+      </div>
+    </div>
+  </div>
+ <div class="container "style="margin-top:100px;">
+    <div id="autoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_bcd_m_bcd_250923_400.jpg?tr=w-1130,q-80" class="d-block w-100 rounded-5" alt="Banner 1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250923_400.jpg?tr=w-1130,q-80" class="d-block w-100 rounded-5" alt="Banner 2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250923_400.jpg?tr=w-1130,q-80" class="d-block w-100 rounded-5" alt="Banner 3">
+     </div>
+   </div>
+    <!-- Optional navigation -->
+     <button class="carousel-control-prev" type="button" data-bs-target="#autoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+     </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#autoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+     </button>
+  </div>
+        <!-- carousel-inner -->
+  </div>    <!-- carousel -->
+</div>      <!-- container (the one before footer) -->
+
+<!-- ✅ Full-width Footer (now outside container) -->
+<div class="bg-black mt-5 w-100">
+  <div class="final-section py-4" id="contact">
+    <footer class="footer text-center text-success">
+      <h3><span class="strike">Vedaisa</span> — growing trust organically 🌿</h3>
+      <p>Connecting verified farmers & sustainable stores directly to your home.</p>
+      
+      <div class="footer-links d-flex justify-content-center flex-wrap gap-3 my-3">
+        <a href="#hero" class="text-success text-decoration-none">Home</a>
+        <a href="#about" class="text-success text-decoration-none">About</a>
+        <a href="#Journey" class="text-success text-decoration-none">Our Journey</a>
+        <a href="#shop" class="text-success text-decoration-none">Shop</a>
+        <a href="contact.html" class="text-success text-decoration-none">Contact</a>
+        <a href="admin.html" class="text-success text-decoration-none">Admin</a>
+      </div>
+
+      <div class="footer-socials d-flex justify-content-center gap-4 fs-4 my-3">
+        <a href="#" class="text-success"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-success"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="text-success"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+
+      <p class="copyright mt-3 mb-0">© 2025 Vedaisa. All Rights Reserved.</p>
+    </footer>
+  </div>
+</div>
+
+<<!-- 🟢 LOGIN WITH OTP MODAL -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow-lg">
+      <div class="modal-header bg-success text-white rounded-top-4">
+        <h5 class="modal-title fw-bold" id="loginModalLabel"><i class="bi bi-person-circle me-2"></i>Login with OTP</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body p-4">
+        <form id="otpLoginForm">
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email address</label>
+           <input type="email" class="form-control rounded-3" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="mb-3" id="otpField" style="display:none;">
+            <label for="otp" class="form-label fw-semibold">Enter OTP</label>
+            <input type="text" class="form-control rounded-3" id="otp" name="otp" maxlength="6" placeholder="Enter 6-digit OTP">
+          </div>
+
+          <div class="d-grid gap-3 mt-4">
+            <button type="button" id="sendOtpBtn" class="btn btn-success rounded-3">Send OTP</button>
+            <button type="button" id="loginBtn" class="btn btn-warning rounded-3" style="display:none;">Login</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer bg-light rounded-bottom-4">
+        <small class="text-muted">Don’t have an account? <a href="SignUp.html" class="text-success fw-semibold">Register here</a></small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🟡 Modal Script -->
+<script>
+document.getElementById("sendOtpBtn").addEventListener("click", function() {
+  const email = document.getElementById("email").value.trim();
+  if (email === "") {
+    alert("Please enter your email first!");
+    return;
+  }
+
+  // Send OTP via servlet
+  fetch("sentotp", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: "email=" + encodeURIComponent(email)
+  })
+  .then(res => res.text())
+  .then(data => {
+    if (data === "OTP_SENT") {
+      alert("✅ OTP sent successfully!");
+      document.getElementById("otpField").style.display = "block";
+      document.getElementById("sendOtpBtn").style.display = "none";
+      document.getElementById("loginBtn").style.display = "block";
+    } else {
+      alert("❌ Failed to send OTP. Try again!");
+    }
+  });
+});
+
+document.getElementById("loginBtn").addEventListener("click", function() {
+  const email = document.getElementById("email").value.trim();
+  const otp = document.getElementById("otp").value.trim();
+
+  fetch("VerifyOtpServlet", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: "email=" + encodeURIComponent(email) + "&otp=" + encodeURIComponent(otp)
+  })
+  .then(res => res.text())
+  .then(data => {
+    if (data === "SUCCESS") {
+      alert("🎉 Login successful!");
+      const modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+      modal.hide();
+    } else {
+      alert("❌ Invalid OTP. Try again!");
+    }
+  });
+});
+</script>
+<!-- 🛒 Shopping Cart Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+  <div class="offcanvas-header bg-success text-white">
+    <h5 id="offcanvasCartLabel" class="fw-bold"><i class="bi bi-cart-check me-2"></i>Your Cart</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="text-muted">Your basket is currently empty 🛒</p>
+  </div>
+</div>
+
+
+<!-- ✅ Full-width Footer -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script> 
+   
+</body>
+</html>
+  
+

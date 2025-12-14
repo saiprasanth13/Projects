@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store Admin Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7f4;
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    background: #1e5631;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar img {
+    width: 160px;
+    margin-bottom: 25px;
+}
+.sidebar h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.sidebar a {
+    color: white;
+    width: 100%;
+    padding: 14px 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.sidebar a:hover {
+    background: #2e7d47;
+}
+
+/* MAIN AREA */
+.main-container {
+    flex: 1;
+    padding: 20px 40px;
+    overflow-y: auto;
+}
+
+/* TOP STATISTIC CARDS */
+.stats-box {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+.stat-card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #1e5631;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.stat-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+.stat-card p {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e5631;
+}
+
+/* GRID AREA */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+}
+
+/* SALES TREND GRAPH SECTION */
+.chart-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* TABLE */
+.table-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th {
+    text-align: left;
+    padding: 10px;
+    background: #eef5e9;
+}
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* QUICK ACTIONS */
+.quick-actions {
+    margin-top: 25px;
+    padding: 20px;
+    background: #1e5631;
+    color: white;
+    border-radius: 10px;
+}
+.quick-actions button {
+    background: white;
+    color: #1e5631;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.quick-actions button:hover {
+    background: #def1e4;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <!-- ✅ LOGO ADDED HERE -->
+    <img src="https://res.cloudinary.com/dpxrmf3vc/image/upload/v1761909191/Screenshot__71__copy-removebg-preview_1_ufupio.png" alt="Logo">
+
+    <h2>Store Admin</h2>
+    <a href="storeregister.jsp">➕ New Store</a>
+    <a href="updatestore.jsp">✏ Update Store</a>
+    <a href="deletestore.jsp">🗑 Delete Store</a>
+    <a href="viewallstore.jsp">📋 View All Stores</a>
+</aside>
+
+<!-- MAIN CONTENT -->
+<div class="main-container">
+
+    <!-- STATS CARDS -->
+    <div class="stats-box">
+        <div class="stat-card"><h3>DAILY SALES</h3><p>₹ 1,250</p></div>
+        <div class="stat-card"><h3>TOP PRODUCT</h3><p>Organic Products</p></div>
+        <div class="stat-card"><h3>NEW ORDERS</h3><p>25 Pending</p></div>
+    </div>
+
+    <!-- Graph + Side actions -->
+    <div class="dashboard-grid">
+
+        <!-- SALES TREND CHART -->
+        <div class="chart-box">
+            <h3>Sales Trend</h3>
+            <img src="https://res.cloudinary.com/dpxrmf3vc/image/upload/v1762339202/WhatsApp_Image_2025-11-05_at_16.09.04_f31d44f6_olwmol.jpg" width="100%">
+        </div>
+
+        <!-- QUICK ACTIONS -->
+        <div class="quick-actions">
+            <h3>Quick Actions</h3><br>
+            <button onclick="location.href='storeregister.jsp'">Add New Store</button><br><br>
+            <button onclick="location.href='viewallstore.jsp'">View Analytics</button>
+        </div>
+    </div>
+
+   <!-- PRODUCT TABLE -->
+<div class="table-box">
+    <h3>Store Admin Details</h3><br>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Admin</td>
+                <td>admin@gmail.com</td>
+                <td>7654321890</td>
+                <td>Hyderabad</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+</div>
+</body>
+</html>

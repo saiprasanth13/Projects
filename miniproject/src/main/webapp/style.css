@@ -1,0 +1,202 @@
+#s {
+    display: inline-block;
+    color: white;
+    border: none;
+    border-radius: 50px;              /* makes it pill-shaped */
+    padding: 12px 35px;
+    background: linear-gradient(to right, #28a745, #28a745); 
+    background-size: 200% 100%;
+    background-position: left center;
+    transition: background-position 0.8s ease-in-out, transform 0.2s ease;
+    text-decoration: none;
+  }
+
+  /* Hover animation */
+  #s:hover {
+    background: linear-gradient(to right, #09dd3ae8);
+    background-size: 200% 100%;
+    background-position: right center;
+    transform: scale(1.05);          /* slight zoom on hover */
+    color:whitesmoke;
+  }
+  #sa {
+    display: inline-block;
+    color: white;
+    border: none;
+    border-radius: 50px;              /* makes it pill-shaped */
+    padding: 12px 35px;
+     
+    background-size: 200% 100%;
+    background-position: left center;
+    transition: background-position 0.8s ease-in-out, transform 0.2s ease;
+    text-decoration: none;
+  }
+
+  /* Hover animation */
+  #sa:hover {
+    background: linear-gradient(to right, hwb(62 2% 2% / 0.91));
+    background-size: 200% 100%;
+    background-position: right center;
+    transform: scale(1.05);          /* slight zoom on hover */
+    color:green;
+  }
+#ba{
+  
+  transition: transform 0.2s ease;
+}
+#ba:hover{
+  color: green !important;
+     transform:translateY(-5px);
+}
+#product-img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.6s ease-in-out;
+}
+
+/* Change image smoothly on hover */
+#product-img:hover {
+  
+  content: url("https://marketplace.canva.com/EAECdI-JRnM/3/0/800w/canva-green-leaves-organic-market-facebook-cover-Py98Zo7AQTk.jpg");
+}
+#as:hover{
+ color:green !important;
+}
+   #cards {
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    /* Smooth zoom for image */
+    #cards img {
+      transition: transform 0.5s ease;
+    }
+
+    /* Hover effects */
+    #cards:hover img {
+      transform: scale(1.08);
+    }
+
+    #cards:hover {
+      box-shadow: 0 0 25px 5px rgba(0, 128, 0, 0.6);
+      transform: translateY(-6px);
+      
+    }
+
+    /* Optional: enhance text */
+    #cards p {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: #064e09;
+      letter-spacing: 1px;
+    }
+    .final-section {
+  position: relative;
+  background: linear-gradient(to bottom, #0e0f0e 0%, #2a2b29 60%, #2a2c2a 100%);
+  text-align: center;
+  padding: 100px 0 40px;
+  border-top: 3px solid rgba(31, 122, 58, 0.15);
+  overflow: hidden;
+}
+.footer {
+  text-align: center;
+  font-family: "Marcellus SC", serif;
+  color: #47b147;
+}
+
+.footer h3 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.footer h3 .strike {
+  background: linear-gradient(90deg, #1f7a3a, #57b26a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #47b147;
+  margin-bottom: 25px;
+}
+
+.footer-links {
+  margin-bottom: 25px;
+}
+
+.footer-links a {
+   color: #47b147;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #1f7a3a;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #59f57b;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+.footer-socials {
+  margin-bottom: 20px;
+}
+
+.footer-socials a {
+   color: #47b147;
+  font-size: 1.4rem;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+   color: #59f57b;
+  transform: scale(1.1);
+}
+
+.copyright {
+  font-size: 0.9rem;
+   color: #47b147;
+  animation: fadeGlow 5s ease-in-out infinite alternate;
+}
+
+/* ✨ Soft Text Glow Animation */
+@keyframes fadeGlow {
+  from { opacity: 0.8; text-shadow: 0 0 6px rgba(31,122,58,0.15); }
+  to { opacity: 1; text-shadow: 0 0 12px rgba(31,122,58,0.3); }
+}
+
+/* 🌿 Responsive */
+@media (max-width: 900px) {
+  .footer h3 {
+    font-size: 1.6rem;
+  }
+  .footer-links a {
+    margin: 0 8px;
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+    

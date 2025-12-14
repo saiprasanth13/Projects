@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Organic Store - Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .form-container {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      width: 360px;
+      text-align: center;
+      border: 2px solid #a3c9a8;
+      backdrop-filter: blur(8px);
+      animation: slideUp 1.2s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    h2 {
+      color: #4a7c59;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 18px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 40px 12px 12px;
+      border: 1px solid #b2d8b2;
+      border-radius: 10px;
+      background-color: #f9fff9;
+      font-size: 15px;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .input-group input:focus {
+      box-shadow: 0 0 10px #6bbf59;
+      border-color: #6bbf59;
+      outline: none;
+    }
+
+    .input-group .icon {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      filter: grayscale(100%);
+      opacity: 0.7;
+    }
+
+    input[type="submit"] {
+      background-color: #6bbf59;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #4a7c59;
+      transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 400px) {
+      .form-container {
+        width: 90%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form class="form-container" action="user_registration" method="post">
+    <img src="https://res.cloudinary.com/dpxrmf3vc/image/upload/v1761909191/Screenshot__71__copy-removebg-preview_1_ufupio.png" alt="Farm Fresh Organic Logo" class="logo">
+    <h2>Create Your Organic Account</h2>
+
+    <div class="input-group">
+      <input type="number" name="user_id" placeholder="User ID" required>
+      <img src="https://img.icons8.com/ios-filled/50/000000/id-verified.png" class="icon" alt="User ID">
+    </div>
+
+    <div class="input-group">
+      <input type="text" name="full_name" placeholder="Enter Full Name" required>
+      <img src="https://img.icons8.com/ios-filled/50/000000/leaf.png" class="icon" alt="Full Name">
+    </div>
+
+    <div class="input-group">
+      <input type="email" name="email" placeholder="Email Address" required>
+      <img src="https://img.icons8.com/ios-filled/50/000000/email.png" class="icon" alt="Email">
+    </div>
+
+    <div class="input-group">
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" class="icon" alt="Phone">
+    </div>
+
+    <div class="input-group">
+      <input type="password" name="password_hash" placeholder="Create Password" required>
+      <img src="https://img.icons8.com/ios-filled/50/000000/lock.png" class="icon" alt="Password">
+    </div>
+
+    <input type="submit" value="Sign Up">
+  </form>
+</body>
+</html>
